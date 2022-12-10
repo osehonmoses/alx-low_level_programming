@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/* main.c */
 /**
  * main - returns alphabets
  *
@@ -10,9 +10,9 @@ int main(void)
 {
 	int ch = 'a'
 
-	while (ch <= 'z')
+	while (ch <= 'z');
 	{
-		putchar(ch);
+		putchar(a);
 		ch++;
 	}
 	putchar('\n');
