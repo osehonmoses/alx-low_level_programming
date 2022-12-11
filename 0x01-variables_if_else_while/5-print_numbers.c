@@ -3,6 +3,7 @@
 
 /**
  * main - write a script that prints all single digit number of base 10
+ *
  * Return: 0
  */
 
