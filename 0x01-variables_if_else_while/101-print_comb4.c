@@ -27,7 +27,7 @@ int main(void)
 							tens == '8'))
 					{
 						putchar(',');
-						putchar(' '):
+						putchar(' ');
 					}
 				}
 			}
