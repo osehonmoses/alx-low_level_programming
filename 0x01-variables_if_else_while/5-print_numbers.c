@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
  * main - write a script that prints all single digit number of base 10
  *
@@ -9,13 +7,11 @@
 
 int main(void)
 {
-	int num = 0;
+	int a;
 
-	while (num < 10)
-	{
-		printf("%d" num);
-		num++;
-	}
+	for (a = 0; a < 10; a++)
+		printf("%d", a);
 	putchar('\n');
 	return (0);
 }
+
