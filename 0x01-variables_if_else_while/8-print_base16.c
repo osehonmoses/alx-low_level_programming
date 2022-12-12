@@ -7,10 +7,22 @@
 
 int main(void)
 {
-	int a;
+	char c;
 
-	for (a = 0; a < 16; a++)
-		printf("%d", a);
-	putchar('\n');
+	int d;
+
+	c = 'a';
+	while
+		(d < 10)
+	{
+		putchar(d + '0');
+		d++;
+	}
+	while
+		(c <= 'f')
+	{
+		putchar (c);
+		c++;
+	}
 	return (0);
 }
