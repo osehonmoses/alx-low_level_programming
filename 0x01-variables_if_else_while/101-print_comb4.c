@@ -13,19 +13,22 @@ int main(void)
 
 	for (hundreds = '0'; hundreds <= '9'; hundreds++)
 	{
-		for (ones = '0'; ones <= '9'; tens++)
+		for (tens = '0'; tens <= '9'; tens++)
 		{
-			if (!((ones == tens) || (tens == hundreds) ||
-						(tens > ones) || (hundreds > tens)))
+			for (ones = '0'; ones <= '9'; tens++)
 			{
+				if (!((ones == tens) || (tens == hundreds) ||
+						(tens > ones) || (hundreds > tens)))
+				{
 				putchar(hundreds);
 				putchar(tens);
 				putchar(ones);
 				if (!(ones == '9' && hundreds == '7' &&
 							tens == '8'))
-				{
-					putchar(',');
-					putchar(' ');
+					{
+						putchar(',');
+						putchar(' '):
+					}
 				}
 			}
 		}
