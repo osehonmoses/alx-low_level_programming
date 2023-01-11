@@ -1,33 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 /**
- * main - print the number of arguments passed to the program
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - multiplies two numbers.
+ * @argc: argument count
+ * @argv: arguments
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i;
+	int x, y;
 
-	for (i = 0; i < argc; i++)
+	if (argc < 3)
 	{
-		printf("%s\n", argv[i]);
+		printf("Error\n");
+		return (1);
 	}
 
-	int result = 1;
-
-	for (i = 1; i < argc; i++)
-	{
-		int x = strtol(argv[i], NULL, 10);
-
-		result = result * x;
-	}
-
-	printf("%d\n", result);
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	printf("%d\n", x * y);
 
 	return (0);
 }
